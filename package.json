@@ -1,0 +1,52 @@
+{
+  "name": "solana-target-switcher",
+  "displayName": "Solana Target Switcher",
+  "author": "Dean Little <@deanmlittle>",
+  "publisher": "deanmlittle",
+  "description": "Easily switch your target OS to/from Solana for debugging conditional builds",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:rust"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "solanaTargetSwitcher.toggle",
+        "title": "Toggle Solana Target OS"
+      }
+    ],
+		"productIconThemes": [
+      {
+        "id": "vsolana-target-switcher",
+        "label": "Solana Target Switch Icons",
+        "path": "icons/solana-target-switcher-product-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.92.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
