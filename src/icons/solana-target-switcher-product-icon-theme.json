@@ -1,0 +1,23 @@
+{
+    "fonts": [
+        {
+            "id": "solana-target-switcher",
+            "src": [
+                {
+                    "path": "./solana-target-switcher.woff",
+                    "format": "woff"
+                }
+            ],
+            "weight": "normal",
+            "style": "normal"
+        }
+    ],
+    "iconDefinitions": {
+        "debug-start": {
+            "fontCharacter": "\\e901"
+        },
+        "debug-stop": {
+            "fontCharacter": "\\e900"
+        }
+    }
+}

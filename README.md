@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Solana Target Switcher** is a simple VSCode extension designed to help you quickly switch between your default Rust build target and the "solana" target. This is particularly useful for developers working with Solana projects who need to toggle between different build targets without manually editing configuration files.
+The **Solana Target Switcher** is a simple VSCode extension designed to help you quickly switch between your default Rust build target and the "solana" target OS. This is particularly useful for developers working on cross-platform Solana libraries and need to frequently toggle between different build targets but don't want tomanually setup/edit configuration files.
 
 ## Features
 
@@ -11,18 +11,14 @@ The **Solana Target Switcher** is a simple VSCode extension designed to help you
 ## Usage
 
 1. **Activate the Extension:**
-   - Once installed, the extension automatically adds a new icon to the status bar.
-   
+   - The extension is not activated by default. To activate is, simply search for and run "Toggle Solana Target OS" in VSCode.
+  
 2. **Toggle Between Targets:**
    - Click the icon in the status bar to toggle between the default Rust build target and the "solana" target.
-   - The icon will change color based on the selected target.
+   - The Solana icon will appear solid if Solana is selected, or as an outlined version otherwise.
 
-3. **Target Display:**
-   - When the "solana" target is selected, the icon will be solid.
-   - When the default target is selected, the icon will be outlined.
-
-4. **Configuration:**
-   - The extension modifies the `rust-analyzer.cargo.target` setting in your VSCode workspace configuration.
+3. **Configuration:**
+   - The extension modifies the `rust-analyzer.cargo.target` and `rust-analyzer.cargo.extraArgs` setting in your VSCode workspace configuration.
 
 ## Contribution
 
