@@ -7,7 +7,8 @@
   "version": "0.1.0",
   "repository": "https://github.com/deanmlittle/solana-target-switcher",
   "engines": {
-    "vscode": "^1.92.0"
+    "vscode": "^1.92.0",
+    "cursor": "^0.39.6"
   },
   "categories": [
     "Other"
